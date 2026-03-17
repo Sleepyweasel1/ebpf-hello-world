@@ -1,2 +1,10 @@
 [tools]
 go = "latest"
+
+[tasks.install-latest-bpftool]
+description = "Download and install the latest bpftool release from GitHub"
+run = "bash ./mise-task/install-latest-bpftool.sh"
+
+[tasks.install-latest-bpftop]
+description = "Download and install the latest bpftop release from GitHub"
+run = "bash ./mise-task/install-latest-bpftop.sh"
