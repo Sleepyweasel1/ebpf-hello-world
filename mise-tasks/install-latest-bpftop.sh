@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#MISE description="install the latest bpftop release"
 set -euo pipefail
 
 api_url="https://api.github.com/repos/Netflix/bpftop/releases/latest"

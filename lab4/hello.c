@@ -3,7 +3,7 @@
 #include <bpf/bpf_helpers.h>
 
 // Step 1: Add the license for this program 
-
+char _license[] SEC("license") = "GPL";
 #define MAX_PATH 256
 
 struct path_key {
@@ -36,6 +36,9 @@ int handle_execve_tp(struct trace_event_raw_sys_enter *ctx) {
     }
 
     // Step 2: Print `key.path` and `*val`
+    if(val) {
+        bpf_printk("execve: %s (count: %llu)\n", key.path, *val);
+    }
 
     return 0;
 }

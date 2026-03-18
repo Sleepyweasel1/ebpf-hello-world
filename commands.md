@@ -8,4 +8,4 @@ sudo bpftool prog show name handle_execve_tp
 sudo bpftool prog show tag 8236b54ceef5a3ce
 ---
 sudo bpftool prog show id 15 --pretty
-https://ebpfchirp.substack.com/p/how-to-find-supported-ebpf-helper
+https://ebpfchirp.substack.com/p/how-to-find-supported-ebpf-hel

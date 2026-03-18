@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#MISE description="install the latest bpftool release"
 set -euo pipefail
 
 api_url="https://api.github.com/repos/libbpf/bpftool/releases/latest"

@@ -14,6 +14,7 @@ struct {
     __type(key, struct path_key);
     __type(value, __u64);
 } exec_count SEC(".maps");
+char _license[] SEC("license") = "GPL";
 
 SEC("tracepoint/syscalls/sys_enter_execve")
 int challenge(struct trace_event_raw_sys_enter *ctx) {
