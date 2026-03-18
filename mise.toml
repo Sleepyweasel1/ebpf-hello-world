@@ -8,3 +8,7 @@ run = "bash ./mise-task/install-latest-bpftool.sh"
 [tasks.install-latest-bpftop]
 description = "Download and install the latest bpftop release from GitHub"
 run = "bash ./mise-task/install-latest-bpftop.sh"
+
+[tasks.mount-trace-debug]
+description = "mount tracefs and debugfs"
+run = "bash ./mise-task/mount-trace-debug-fs.sh"
